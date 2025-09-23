@@ -11,7 +11,7 @@ const Dashboard = () => {
 
   return (
     <div className="w-full">
-      <div className="bg-white shadow-md rounded-lg p-6 mb-6 flex flex-col items-center justify-center">
+      <div className="bg-white shadow-md rounded-lg  mb-10 flex flex-col items-center justify-center">
              {/* <p
           className={`mt-2 flex items-center text-lg font-semibold ${
             status === "Present" ? "text-green-600" : "text-red-600"
