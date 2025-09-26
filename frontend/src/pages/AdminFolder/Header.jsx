@@ -1,9 +1,8 @@
 // src/components/Header.js
 import React from "react";
 import { useNavigate } from 'react-router-dom';
-import logo from "../../UI/logo.png";
-import Slogo from "../../UI/stu1logo.png";
-
+import addlogo from "../UI/adminlogo.png";
+import logo from "../UI/logo.png"
 
 const Header = () => {
   const navigate = useNavigate();
@@ -31,7 +30,7 @@ const Header = () => {
               SmartAttendance
             </h1>
             <span className="text-sm font-medium text-gray-500 hidden sm:block">
-              Students
+              Admin
             </span>
           </div>
         </div>
@@ -51,15 +50,15 @@ const Header = () => {
         {/* Faculty Profile and Logout Button */}
         <div className="flex items-center space-x-3 cursor-pointer group relative">
           <img
-            src={Slogo}
+            src={addlogo}
             alt="Faculty Profile"
             className="rounded-full ring-2 ring-indigo-300 group-hover:ring-indigo-500 transition-all duration-300 w-10 h-10"
           />
           <div className="hidden md:flex flex-col">
             <span className="text-sm font-semibold text-gray-800">
-              Mr. Krishna Yadav
+              Dr. John Doe
             </span>
-            <span className="text-xs text-gray-500">Students</span>
+            <span className="text-xs text-gray-500">Faculty</span>
           </div>
           {/* Logout button with SVG icon */}
           <button

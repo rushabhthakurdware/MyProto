@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import Header from './Header';
 
 // Component for the Campus Overview Page
 const CampusOverview = () => (
@@ -436,67 +437,70 @@ function Admin() {
     };
 
     return (
-        <div className="flex min-h-screen font-inter">
-            {/* Sidebar */}
-            <aside className="w-64 bg-white p-4 flex flex-col items-center shadow-lg rounded-r-2xl h-screen sticky top-0">
-                <div className="text-2xl font-bold text-gray-800 mb-8 mt-2">
-                    College Admin
+<>
+    <Header userName="ravi" department="cse" className="mb-100"/>
+    <div className="flex min-h-screen font-inter">
+        {/* Sidebar */}
+        <aside className="w-64 bg-white p-4 flex flex-col items-center shadow-lg rounded-r-2xl h-screen sticky top-0 mt-30">
+            <div className="text-2xl font-bold text-gray-800 mb-8 mt-2">
+                College Admin
+            </div>
+            <nav className="w-full space-y-2">
+                <div onClick={() => setActiveComponent('overview')} className={getSidebarItemClasses('overview')}>
+                    <span data-lucide="layout-dashboard"></span>
+                    <span>Campus Overview</span>
                 </div>
-                <nav className="w-full space-y-2">
-                    <div onClick={() => setActiveComponent('overview')} className={getSidebarItemClasses('overview')}>
-                        <span data-lucide="layout-dashboard"></span>
-                        <span>Campus Overview</span>
-                    </div>
-                    <div onClick={() => setActiveComponent('students')} className={getSidebarItemClasses('students')}>
-                        <span data-lucide="graduation-cap"></span>
-                        <span>Students</span>
-                    </div>
-                    <div onClick={() => setActiveComponent('courses')} className={getSidebarItemClasses('courses')}>
-                        <span data-lucide="book"></span>
-                        <span>Courses</span>
-                    </div>
-                    <div onClick={() => setActiveComponent('faculty')} className={getSidebarItemClasses('faculty')}>
-                        <span data-lucide="briefcase"></span>
-                        <span>Faculty</span>
-                    </div>
-                    <div onClick={() => setActiveComponent('news')} className={getSidebarItemClasses('news')}>
-                        <span data-lucide="bell"></span>
-                        <span>Campus News</span>
-                    </div>
-                </nav>
-                <div className="mt-auto w-full">
-                    {/* Logout button with onClick handler */}
-                  <button
-  onClick={handleLogout}
-  className="flex items-center justify-center space-x-2 p-3 rounded-lg bg-gray-200 text-gray-800 font-semibold w-full transition-colors hover:bg-red-600 hover:text-white focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-opacity-50"
-  title="Logout"
->
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="24"
-    height="24"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="2"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-    className="lucide lucide-log-out"
-  >
-    <path d="m16 17 5-5-5-5" />
-    <path d="M21 12H9" />
-    <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4" />
-  </svg>
-  <span>Logout</span>
-</button>
+                <div onClick={() => setActiveComponent('students')} className={getSidebarItemClasses('students')}>
+                    <span data-lucide="graduation-cap"></span>
+                    <span>Students</span>
                 </div>
-            </aside>
+                <div onClick={() => setActiveComponent('courses')} className={getSidebarItemClasses('courses')}>
+                    <span data-lucide="book"></span>
+                    <span>Courses</span>
+                </div>
+                <div onClick={() => setActiveComponent('faculty')} className={getSidebarItemClasses('faculty')}>
+                    <span data-lucide="briefcase"></span>
+                    <span>Faculty</span>
+                </div>
+                <div onClick={() => setActiveComponent('news')} className={getSidebarItemClasses('news')}>
+                    <span data-lucide="bell"></span>
+                    <span>Campus News</span>
+                </div>
+            </nav>
+            <div className="mt-auto w-full">
+                {/* Logout button with onClick handler */}
+                {/* <button
+                    onClick={handleLogout}
+                    className="flex items-center justify-center space-x-2 p-3 rounded-lg bg-gray-200 text-gray-800 font-semibold w-full transition-colors hover:bg-red-600 hover:text-white focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-opacity-50"
+                    title="Logout"
+                >
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        className="lucide lucide-log-out"
+                    >
+                        <path d="m16 17 5-5-5-5" />
+                        <path d="M21 12H9" />
+                        <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4" />
+                    </svg>
+                    <span>Logout</span>
+                </button> */}
+            </div>
+        </aside>
 
-            {/* Main Content Area */}
-            <main className="flex-1 p-6 md:p-8 overflow-y-auto">
-                {renderContent()}
-            </main>
-        </div>
+        {/* Main Content Area */}
+        <main className="flex-1 p-6 md:p-8 overflow-y-auto mt-25">
+            {renderContent()}
+        </main>
+    </div>
+</>
     );
 }
 

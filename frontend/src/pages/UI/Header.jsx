@@ -55,7 +55,7 @@ const Header = () => {
           />
           <div className="hidden md:flex flex-col">
             <span className="text-sm font-semibold text-gray-800">
-              Dr. John Doe
+              Prof. Mary James
             </span>
             <span className="text-xs text-gray-500">Faculty</span>
           </div>
