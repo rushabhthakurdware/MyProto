@@ -1,11 +1,12 @@
 import React, { useState } from "react";
+import logo from "../UI/logo.png";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Tabs from "./components/Tabs";
 import Dashboard from "./components/Dashboard";
 import AttendanceCharts from "./components/AttendanceCharts";
 import ODRequestForm from "./components/ODRequestForm";
-import TandPSection from "./components/TAndPSection";
+import TandPSection from "./components/TandPSection";
 
 const StudentPage = () => {
   const [activeTab, setActiveTab] = useState("attendance");
@@ -33,10 +34,11 @@ const StudentPage = () => {
       <Header />
       <div className="flex-grow p-6 mt-22">
         <div className="flex justify-between items-center mb-6">
-          <div className="text-gray-800">
-            <h1 className="text-3xl font-bold">Welcome, Student!</h1>
-            <p className="text-gray-500 text-lg">Department: Computer Science</p>
-          </div>
+            <div className="text-gray-800">
+              <img src={logo} alt="Logo" className="h-12 w-12 mb-2 inline-block" />
+              <h1 className="text-3xl font-bold">Welcome, Student!</h1>
+              <p className="text-gray-500 text-lg">Department: Computer Science</p>
+            </div>
           <p className="text-gray-600 font-medium">
             Today,{" "}
             {new Date().toLocaleDateString("en-US", {

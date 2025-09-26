@@ -58,7 +58,7 @@ const Header = () => {
             <span className="text-sm font-semibold text-gray-800">
               Dr. John Doe
             </span>
-            <span className="text-xs text-gray-500">Faculty</span>
+            <span className="text-xs text-gray-500">Admin</span>
           </div>
           {/* Logout button with SVG icon */}
           <button

@@ -105,7 +105,7 @@ const Login = () => {
           background-image: linear-gradient(to right, #4F46E5, #8B5CF6);
         }
         .shadow-strong {
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+             box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
         }
         .transition-smooth {
           transition: all 0.2s ease-in-out;
