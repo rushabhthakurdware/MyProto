@@ -31,7 +31,7 @@ const StudentPage = () => {
   return (
     <div className="min-h-screen bg-gray-100 font-sans flex flex-col">
       <Header />
-      <div className="flex-grow p-6 mt-16">
+      <div className="flex-grow p-6 mt-22">
         <div className="flex justify-between items-center mb-6">
           <div className="text-gray-800">
             <h1 className="text-3xl font-bold">Welcome, Student!</h1>
