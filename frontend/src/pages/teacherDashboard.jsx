@@ -81,14 +81,13 @@ const TeacherDashboard = ({ userData }) => {
     <div className="dashboard-layout">
       <Header userName="ravi" department="cse" />
       <div className="main-content">
-        <div className="panel-row mt-40">
+        <div className="panel-row mt-4">
           <AttendancePanel
-            onStartSession={handleStartSession}
-            onStopSession={handleStopSession}
-            sessionActive={sessionActive}
-            qrCodeUrl={qrCodeUrl}
-            timer={timer}
-          />
+  onStartSession={handleStartSession}
+  onStopSession={handleStopSession}
+  sessionActive={sessionActive}
+/>
+
           <LiveAttendance
             liveAttendanceData={liveAttendanceData}
             sessionActive={sessionActive}
