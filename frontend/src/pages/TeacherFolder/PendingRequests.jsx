@@ -21,11 +21,11 @@ const PendingRequests = () => {
 
   return (
     <Card className="flex-1">
-      {/* <div className="flex items-center space-x-2 text-blue-600 mb-4">
-        <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0a2 2 0 100 4 2 2 0 000-4z"></path></svg>
-        <span className="font-medium text-lg">Pending OD Requests</span>
-        <span className="bg-red-100 text-red-800 text-sm font-semibold ml-auto px-2 py-1 rounded-full">{requests.length}</span>
-      </div> */}
+        {/* <div className="flex items-center space-x-2 text-blue-600 mb-4">
+         <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0a2 2 0 100 4 2 2 0 000-4z"></path></svg>
+         <span className="font-medium text-lg">Pending OD Requests</span>
+         <span className="bg-red-100 text-red-800 text-sm font-semibold ml-auto px-2 py-1 rounded-full">{requests.length}</span>
+       </div>  */}
       {/* <ul className="space-y-4"> */}
         {/* {requests.length === 0 ? ( */}
           {/* <li className="py-2 text-gray-500 text-sm">No pending requests.</li> */}

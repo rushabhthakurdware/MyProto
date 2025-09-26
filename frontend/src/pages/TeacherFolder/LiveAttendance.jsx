@@ -82,9 +82,10 @@ const AttendancePanel = ({ courses, onStart, onStop, sessionActive, qrCodeUrl })
               </option>
             ))}
           </select>
-          <Button onClick={handleStartClick} className="bg-blue-600 hover:bg-blue-700 text-white mt-4">
+          <Button onClick={handleStartClick} className="bg-blue-600 hover:bg-blue-700 text-white mt-4 ">
             <div className="flex items-center justify-center space-x-2">
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-play-icon lucide-play"><path d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z"/></svg>              <span>{isLoading ? 'Starting...' : 'Start Session'}</span>
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-play-icon lucide-play"><path d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z"/></svg>              
+<span>{isLoading ? 'Starting...' : 'Start Session'}</span>
             </div>
           </Button>
         </>
@@ -168,7 +169,7 @@ const LiveAttendance = ({ liveAttendanceData }) => {
 const PendingRequests = ({ requests, onApprove, onReject }) => {
   return (
     <Card className="flex-1">
-      <div className="flex items-center space-x-2 text-blue-600 mb-4">
+      <div className="flex items-center space-x-2 text-blue-600 mb-4 -ml-[10px]">
         <svg
           className="h-6 w-6"
           fill="none"
@@ -195,7 +196,7 @@ const PendingRequests = ({ requests, onApprove, onReject }) => {
           requests.map((request) => (
             <li
               key={request.id}
-              className="bg-gray-50 p-4 rounded-lg flex flex-col sm:flex-row sm:items-center sm:justify-between"
+              className="bg-gray-50 p-4 rounded-lg flex flex-col sm:flex-row sm:items-center sm:justify-between -ml-[10px]"
             >
               <div className="flex-1 ml-1 mr-3">
                 <div className="font-medium text-gray-900">{request.studentName}</div>
