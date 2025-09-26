@@ -5,7 +5,7 @@ import Tabs from "./components/Tabs";
 import Dashboard from "./components/Dashboard";
 import AttendanceCharts from "./components/AttendanceCharts";
 import ODRequestForm from "./components/ODRequestForm";
-import TandPSection from "./components/TAndPSection";
+// import TandPSection from "./components/TAndPSection";
 
 const StudentPage = () => {
   const [activeTab, setActiveTab] = useState("attendance");
@@ -59,7 +59,7 @@ const StudentPage = () => {
           {renderContent()}
         </div>
 
-        <TandPSection />
+        {/* <TandPSection /> */}
       </div>
       <Footer />
     </div>

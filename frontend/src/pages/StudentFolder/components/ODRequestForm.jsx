@@ -13,14 +13,14 @@ const ODRequestForm = () => {
   };
 
   return (
-    <div className="bg-white shadow-md rounded-lg p-6 w-full">
+    <div className="bg-white shadow-md rounded-lg p-6 w-full -mt-[500px]">
       <h2 className="text-xl font-bold mb-4 text-gray-800">OD Request Form</h2>
       {submitted ? (
         <div className="p-4 bg-green-100 text-green-700 rounded-lg">
           ✅ OD Request submitted successfully for <b>{date}</b>.
         </div>
       ) : (
-        <form onSubmit={handleSubmit} className="space-y-4">
+        <form onSubmit={handleSubmit} className="space-y-10">
           <div>
             <label className="block text-gray-700 font-medium mb-2">Date</label>
             <input

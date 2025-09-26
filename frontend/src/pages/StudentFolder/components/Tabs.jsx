@@ -86,24 +86,24 @@ const Tabs = ({ activeTab, setActiveTab }) => {
             />
           </div>
         );
-      case 'attendance':
-        return (
-          <div className="p-8 bg-white rounded-2xl shadow-xl text-center">
-            <h3 className="text-2xl font-bold text-gray-800 mb-2">Attendance Records</h3>
-            <p className="text-gray-500">View your attendance history here.</p>
-            {/* You can add a table or chart here for a real application */}
-          </div>
-        );
-      case 'od-request':
-        return (
-          <div className="p-8 bg-white rounded-2xl shadow-xl text-center">
-            <h3 className="text-2xl font-bold text-gray-800 mb-2">OD Request Form</h3>
-            <p className="text-gray-500">Submit new OD requests or view existing ones.</p>
-            {/* You can add a form here for a real application */}
-          </div>
-        );
-      default:
-        return null;
+      // case 'attendance':
+      //   return (
+      //     <div className="p-8 bg-white rounded-2xl shadow-xl text-center">
+      //       <h3 className="text-2xl font-bold text-gray-800 mb-2">Attendance Records</h3>
+      //       <p className="text-gray-500">View your attendance history here.</p>
+      //       {/* You can add a table or chart here for a real application */}
+      //     </div>
+      //   );
+      // case 'od-request':
+      //   return (
+      //     <div className="p-8 bg-white rounded-2xl shadow-xl text-center">
+      //       <h3 className="text-2xl font-bold text-gray-800 mb-2">OD Request Form</h3>
+      //       <p className="text-gray-500">Submit new OD requests or view existing ones.</p>
+      //       {/* You can add a form here for a real application */}
+      //     </div>
+      //   );
+      // default:
+      //   return null;
     }
   };
 

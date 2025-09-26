@@ -49,7 +49,7 @@ const AttendanceCharts = () => {
   };
 
   return (
-    <div className="flex flex-col lg:flex-row gap-6 w-full">
+    <div className="flex flex-col lg:flex-row gap-6 w-full -mt-[400px]">
       <div className="bg-white shadow-md rounded-lg p-6 w-full lg:w-1/2">
         <h2 className="text-xl font-bold mb-4 text-gray-800">Weekly Attendance</h2>
         <Line data={lineData} />
